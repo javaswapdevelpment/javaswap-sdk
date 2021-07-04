@@ -1,7 +1,7 @@
 {
   "name": "@javaswap/sdk",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "🛠 An SDK for building applications on top of javaswap.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,8 +19,7 @@
     "lint:fix": "tsdx lint src test --fix",
     "build": "tsdx build",
     "start": "tsdx watch",
-    "test": "tsdx test",
-    "prepublishOnly": "tsdx build"
+    "test": "tsdx test"
   },
   "dependencies": {
     "@javaswap/javaswap-core": "^0.1.0",
