@@ -6,8 +6,8 @@ const ADDRESSES = [
   '0x0000000000000000000000000000000000000002',
   '0x0000000000000000000000000000000000000003'
 ]
-const CHAIN_ID = ChainId.BSCTESTNET
-const WETH = _WETH[ChainId.BSCTESTNET]
+const CHAIN_ID = ChainId.MUMBAINET
+const WETH = _WETH[ChainId.MUMBAINET]
 const DECIMAL_PERMUTATIONS: [number, number, number][] = [
   [0, 0, 0],
   [0, 9, 18],
@@ -167,7 +167,7 @@ describe('entities', () => {
             const trade = new Trade(route, outputAmount, TradeType.EXACT_INPUT)
 
             expect(trade.priceImpact.toSignificant(18)).toEqual(
-              tokens[1].decimals === 9 ? '0.300000099400899902' : '0.3000000000000001'
+              tokens[1].decimals === 9 ? '0.200000102200599899' : '0.3000000000000001'
             )
           }
         })
